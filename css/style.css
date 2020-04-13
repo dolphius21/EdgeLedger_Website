@@ -1,0 +1,55 @@
+/* Main Classes */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+
+.width-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+/* Main Nav */
+
+.main-nav {
+  background: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.main-nav ul {
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
