@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -25,7 +26,6 @@ p {
 .width-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .flex-container {
@@ -39,6 +39,14 @@ p {
 
 .heading {
   font-size: 2rem;
+}
+
+.pad-1 {
+  padding: 1rem;
+}
+
+.pad-2 {
+  padding: 2rem;
 }
 
 
@@ -81,26 +89,37 @@ p {
 /* Banner */
 
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
             #333 url(../image_resources/banner-bg.jpg) no-repeat center/cover;
-  height: 600px;
-  text-align: center;
+  height: 650px;
   color: #fff;
+}
+
+.banner .width-container {
+  height: 100%;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .banner h1 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
-  padding-top: 100px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .banner p {
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .banner a {
@@ -118,10 +137,6 @@ p {
 
 /* What Section */
 
-#what {
-  padding: 20px 0;
-}
-
 #what h2 {
   text-align: center;
   margin: 1.5rem 0;
@@ -130,13 +145,15 @@ p {
 .col-item {
   display: flex;
   padding: 20px;
+  flex-direction: column;
+  text-align: center;
 }
 
 #what i {
   background: #93cb52;
   padding: 15px;
   border-radius: 50%;
-  margin-right: 1.5rem;
+  margin: 0 0 1.5rem;
   align-self: center;
 }
 
@@ -160,7 +177,7 @@ p {
 }
 
 .who-content {
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 #who h3 {
@@ -199,8 +216,7 @@ p {
 
 #contact {
   background: #93cb52;
-  color: #fff;
-  padding: 2rem 0;
+  color: #333;
 }
 
 #contact p {
@@ -222,6 +238,7 @@ label {
   width: 100%;
   padding: .5rem;
   border: none;
+  border-radius: 5px;
 }
 
 .btn {
@@ -230,6 +247,15 @@ label {
   border-radius: 5px;
 }
 
+#contact .form-container,
+#contact .map {
+  flex: 1;
+}
+
+.map {
+  height: 492px;
+  background: #fff;
+}
 
 /* footer */
 

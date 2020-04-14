@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+  .main-nav .flex-container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-self: center;
+  }
+
+  .main-nav ul {
+    padding: 0;
+    align-self: center;
+  }
+
+  .flex-container {
+    flex-direction: row;
+  }
+
+  #clients img {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .banner .width-container {
+    padding: 0 6rem;
+  }
+
+  .col-item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #what i {
+    align-self: start;
+    margin-right: 1rem;
+  }
+
+  .flex-container div {
+    flex: 1;
+  }
+
+  .who-img {
+    background: url(../image_resources/people.jpg) no-repeat center/cover;
+  }
+}
+
+@media (min-width: 1216px) {
+  .banner {
+    height: calc(100vh - 61px);
+  }
+
+  #contact .map {
+    flex: 2;
+  }
+}
