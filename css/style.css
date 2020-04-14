@@ -75,12 +75,15 @@ p {
 
 .main-nav a {
   color: #fff;
+}
+
+.main-nav ul a {
   font-size: 1rem;
   padding: 0.75rem;
   margin: 0 0.5rem;
 }
 
-.main-nav a:hover {
+.main-nav ul a:hover {
   background: #93cb52;
   border-radius: 5px;
 }
