@@ -1,3 +1,9 @@
+@media (min-width: 320px) {
+  .banner h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .main-nav .flex-container {
     justify-content: space-between;
